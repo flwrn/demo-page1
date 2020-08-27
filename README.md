@@ -1,5 +1,9 @@
 # front-page
 
+## About
+
+A single page built with Vue, implementing a simple slider
+
 ## Project setup
 ```
 npm install
