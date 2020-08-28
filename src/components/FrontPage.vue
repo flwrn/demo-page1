@@ -103,8 +103,12 @@ export default {
     initPieChart() {
       const total = this.deposited + this.withdrawn;
       const depositedDeg = (this.deposited / total) * 360;
-      const withdrawnDeg = (this.withdrawn / total) * 360;
-      this.pieChartStyle.background = `conic-gradient(rgb(229, 113, 63) ${depositedDeg}deg, rgb(223, 63, 52) ${withdrawnDeg}deg)`;
+      this.pieChartStyle.background = `
+        conic-gradient(
+          rgb(229, 113, 63) ${depositedDeg}deg,
+          rgb(223, 63, 52) ${depositedDeg}deg
+        )
+      `;
     },
     onTabClick(index) {
       this.selectedTabIndex = index;
